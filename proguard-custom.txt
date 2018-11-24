@@ -112,6 +112,7 @@
 -dontwarn android.net.http.*
 
 ########--------Retrofit + RxJava--------#########
+-dontwarn okhttp3.**
 -dontwarn retrofit.**
 -keep class retrofit.** { *; }
 -dontwarn sun.misc.Unsafe
