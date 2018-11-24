@@ -17,9 +17,9 @@
 # If your project uses WebView with JS, uncomment the following
 # and specify the fully qualified class name to the JavaScript interface
 # class:
-#-keepclassmembers class android.webkit.WebView {
-#   public *;
-#}
+-keepclassmembers class android.webkit.WebView {
+   public *;
+}
 
 #-injars      bin/classes
 #-injars      libs
@@ -155,3 +155,12 @@
 
 #### Android-Image-Cropper
 -keep class android.support.v7.widget.** { *; }
+
+-keep class com.crashlytics.** { *; }
+-keep class com.google.firebase.*.* { *; }
+
+-keep class com.fukurobo.app.MainActivity { *; }
+
+-keep class android.webkit.TracingController { *; }
+
+-keep class com.fukurobo.app.BuildConfig { *; }
